@@ -22,6 +22,6 @@ all the options.
 ### Example that uses defaults
 `<Gravatar email="mathews.kyle@gmail.com" />`
 
-## Example that overrides all defaults
+### Example that overrides all defaults
 `<Gravatar email="mathews.kyle@gmail.com" size=100 rating="pg" https
 default="monsterid" />`
