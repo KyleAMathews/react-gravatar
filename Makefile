@@ -17,6 +17,12 @@ publish:
 	git push --tags origin HEAD:master
 	npm publish
 
+publish-gh-pages:
+	git checkout gh-pages
+	git merge master
+	git push
+	git checkout master
+
 define release
 	@$(BIN)/cjsx -cb -o dist src/index.cjsx
 	npm version $(1)
