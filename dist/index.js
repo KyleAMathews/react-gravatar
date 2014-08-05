@@ -34,7 +34,10 @@ module.exports = React.createClass({
     });
     src = base + md5.digest_s(this.props.email) + "?" + query;
     return React.DOM.img({
-      "src": src
+      "src": src,
+      "alt": this.props.email,
+      "height": this.props.size,
+      "width": this.props.size
     });
   }
 });
