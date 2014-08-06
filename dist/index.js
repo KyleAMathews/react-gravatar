@@ -48,6 +48,7 @@ module.exports = React.createClass({
     });
     src = base + md5.digest_s(this.props.email) + "?" + query;
     return React.DOM.img({
+      "className": "react-gravatar",
       "src": src,
       "alt": this.props.email,
       "height": this.props.size,
