@@ -19,9 +19,9 @@ all the options.
 * http
 * retro backup faces for emails without profiles
 
-### Example that uses defaults
+### Use defaults
 `<Gravatar email="mathews.kyle@gmail.com" />`
 
-### Example that overrides all defaults
+### Override all defaults
 `<Gravatar email="mathews.kyle@gmail.com" size=100 rating="pg" https
 default="monsterid" />`
