@@ -1,7 +1,7 @@
 {
   "name": "react-gravatar",
   "description": "React component for rendering a gravatar profile image",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/KyleAMathews/react-gravatar/issues"
