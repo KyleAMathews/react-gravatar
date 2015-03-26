@@ -18,10 +18,17 @@ all the options.
 * g rated photos
 * http
 * retro backup faces for emails without profiles
+* `react-gravatar` css class
 
 ### Use defaults
 `<Gravatar email="mathews.kyle@gmail.com" />`
 
 ### Override all defaults
-`<Gravatar email="mathews.kyle@gmail.com" size=100 rating="pg" https
-default="monsterid" />`
+`<Gravatar
+	email="mathews.kyle@gmail.com"
+	size=100
+	rating="pg"
+	https
+	default="monsterid"
+	className="CustomAvatar-image"
+/>`

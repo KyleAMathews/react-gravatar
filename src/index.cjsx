@@ -12,12 +12,14 @@ module.exports = React.createClass
     https: React.PropTypes.bool.isRequired
     default: React.PropTypes.string.isRequired
     email: React.PropTypes.string.isRequired
+    className: React.PropTypes.className
 
   getDefaultProps: ->
     size: 50
     rating: 'g'
     https: false
     default: "retro"
+    className: "react-gravatar"
 
   render: ->
     base = if @props.https
@@ -34,5 +36,5 @@ module.exports = React.createClass
     src = base + md5.digest_s(@props.email) + "?" + query
 
     return(
-      <img className="react-gravatar" src={src} alt={@props.email} height={@props.size} width={@props.size} />
+      <img className={this.props.className} src={src} alt={@props.email} height={@props.size} width={@props.size} />
     )
