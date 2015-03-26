@@ -7,13 +7,13 @@
     "url": "https://github.com/KyleAMathews/react-gravatar/issues"
   },
   "dependencies": {
-    "is-retina": "^1.0.0",
+    "is-retina": "^1.0.3",
     "md5": "^1.0.0"
   },
   "devDependencies": {
-    "browserify": "^7.0.0",
-    "coffee-react": "^2.1.2",
-    "react": "^0.12.1"
+    "browserify": "^9.0.3",
+    "coffee-react": "^3.0.1",
+    "react": "^0.13.1"
   },
   "homepage": "https://github.com/KyleAMathews/react-gravatar",
   "keywords": [
