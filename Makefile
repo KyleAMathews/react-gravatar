@@ -20,6 +20,10 @@ publish:
 publish-gh-pages:
 	git checkout gh-pages
 	git merge master
+	@$(BIN)/cjsx -cb -o dist src/index.cjsx
+	@$(BIN)/browserify examples/index.js -o examples/bundle.js
+	git add .
+	git commit -m "Update website"
 	git push
 	git checkout master
 
