@@ -1,7 +1,7 @@
-var Gravatar = require('../dist/index.js');
 var React = require('react');
+var Gravatar = React.createFactory(require('../dist/index.js'));
 
-React.renderComponent(
+React.render(
   React.DOM.div(null,
                 [
                   React.DOM.h2(null, "<Gravatar email='mathews.kyle@gmail.com' />"),
