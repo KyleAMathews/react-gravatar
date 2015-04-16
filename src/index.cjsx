@@ -37,7 +37,7 @@ module.exports = React.createClass
 
     return(
       <img
-        {... @props}
+        {...@props}
         className={"react-gravatar " + @props.className}
         src={src}
         alt={@props.email}
