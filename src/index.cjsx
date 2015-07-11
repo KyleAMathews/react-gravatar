@@ -19,6 +19,7 @@ module.exports = React.createClass
     rating: 'g'
     https: false
     default: "retro"
+    email: ''
     className: ""
 
   render: ->
