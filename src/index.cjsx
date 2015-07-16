@@ -34,7 +34,7 @@ module.exports = React.createClass
       d: @props.default
     })
 
-    src = base + md5.digest_s(@props.email) + "?" + query
+    src = base + md5(@props.email) + "?" + query
 
     return(
       <img
