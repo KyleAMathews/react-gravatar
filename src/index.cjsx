@@ -19,6 +19,7 @@ module.exports = React.createClass
     rating: 'g'
     https: false
     default: "retro"
+    email: ''
     className: ""
 
   render: ->
@@ -33,8 +34,13 @@ module.exports = React.createClass
       d: @props.default
     })
 
-    src = base + md5.digest_s(@props.email) + "?" + query
+    src = base + md5(@props.email) + "?" + query
 
     return(
-      <img className={"react-gravatar " + @props.className} src={src} alt={@props.email} height={@props.size} width={@props.size} />
+      <img
+        {...@props}
+        className={"react-gravatar " + @props.className}
+        src={src}
+        height={@props.size}
+        width={@props.size} />
     )
