@@ -41,7 +41,6 @@ module.exports = React.createClass
         {...@props}
         className={"react-gravatar " + @props.className}
         src={src}
-        alt={@props.email}
         height={@props.size}
         width={@props.size} />
     )
