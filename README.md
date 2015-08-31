@@ -4,7 +4,7 @@ react-gravatar
 React component for rendering a gravatar profile image. Adjusts automatically to HiDPI displays.
 
 ## Demo
-http://kyleamathews.github.io/react-gravatar/examples/
+http://kyleamathews.github.io/react-gravatar/
 
 ## Install
 `npm install react-gravatar`
