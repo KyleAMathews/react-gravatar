@@ -7,7 +7,8 @@ module.exports = React.createClass
   displayName: 'Gravatar'
 
   propTypes:
-    email: React.PropTypes.string.isRequired
+    email: React.PropTypes.string
+    md5: React.PropTypes.string
     size: React.PropTypes.number
     rating: React.PropTypes.string
     https: React.PropTypes.bool
@@ -19,7 +20,6 @@ module.exports = React.createClass
     rating: 'g'
     https: false
     default: "retro"
-    email: ''
     className: ""
 
   render: ->
@@ -34,7 +34,15 @@ module.exports = React.createClass
       d: @props.default
     })
 
-    src = base + md5(@props.email) + "?" + query
+    if @props.md5
+      hash = @props.md5
+    else if @props.email
+      hash = md5(@props.email)
+    else
+      console.warn('Gravatar image can not be fetched. Either the "email" or "md5" prop must be specified.')
+      return(<script/>)
+
+    src = base + hash + "?" + query
 
     return(
       <img
