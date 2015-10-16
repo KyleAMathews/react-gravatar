@@ -29,7 +29,13 @@ module.exports = React.createClass
       'http://www.gravatar.com/avatar/'
 
     query = querystring.stringify({
-      s: if isRetina() then @props.size * 2 else @props.size
+      s: @props.size
+      r: @props.rating
+      d: @props.default
+    })
+
+    retinaQuery = querystring.stringify({
+      s: @props.size * 2
       r: @props.rating
       d: @props.default
     })
@@ -43,12 +49,30 @@ module.exports = React.createClass
       return(<script/>)
 
     src = base + hash + "?" + query
+    retinaSrc = base + hash + "?" + retinaQuery
+
+    modernBrowser = true  # server-side, we render for modern browsers
+
+    if window?
+      # this is not NodeJS
+      modernBrowser = 'srcset' in createElement('img')
+
+    if !modernBrowser and isRetina()
+      return(
+        <img
+          {...@props}
+          className={"react-gravatar " + @props.className}
+          src={retinaSrc}
+          height={@props.size}
+          width={@props.size} />
+      )
 
     return(
       <img
         {...@props}
         className={"react-gravatar " + @props.className}
         src={src}
+        srcset={retinaSrc + " 2x"}
         height={@props.size}
         width={@props.size} />
     )
