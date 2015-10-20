@@ -11,9 +11,9 @@
     "md5": "^2.0.0"
   },
   "devDependencies": {
-    "browserify": "^10.2.6",
+    "browserify": "^11.2.0",
     "coffee-react": "^4.0.0",
-    "react": "^0.13.3"
+    "react": "^0.14.0"
   },
   "homepage": "https://github.com/KyleAMathews/react-gravatar",
   "keywords": [
