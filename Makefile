@@ -21,7 +21,7 @@ publish-gh-pages:
 	git checkout gh-pages
 	git merge master
 	@$(BIN)/cjsx -cb -o dist src/index.cjsx
-	@$(BIN)/browserify examples/index.js -o examples/bundle.js
+	@$(BIN)/browserify -t babelify examples/index.js -o examples/bundle.js
 	cp examples/* .
 	git add .
 	git commit -m "Update website"

@@ -55,24 +55,20 @@ module.exports = React.createClass
 
     if window?
       # this is not NodeJS
-      modernBrowser = 'srcset' in createElement('img')
+      modernBrowser = 'srcset' in document.createElement('img')
 
-    if !modernBrowser and isRetina()
-      return(
-        <img
-          {...@props}
-          className={"react-gravatar " + @props.className}
-          src={retinaSrc}
-          height={@props.size}
-          width={@props.size} />
-      )
-
-    return(
+    if not modernBrowser and isRetina()
       <img
-        {...@props}
+        style={@props.style}
         className={"react-gravatar " + @props.className}
-        src={src}
-        srcset={retinaSrc + " 2x"}
+        src={retinaSrc}
         height={@props.size}
         width={@props.size} />
-    )
+    else
+      <img
+        style={@props.style}
+        className={"react-gravatar " + @props.className}
+        src={src}
+        srcSet={retinaSrc + " 2x"}
+        height={@props.size}
+        width={@props.size} />
