@@ -4,7 +4,7 @@ react-gravatar
 React component for rendering a gravatar profile image. Adjusts automatically to HiDPI displays.
 
 ## Demo
-http://kyleamathews.github.io/react-gravatar/examples/
+http://kyleamathews.github.io/react-gravatar/
 
 ## Install
 `npm install react-gravatar`
@@ -12,6 +12,11 @@ http://kyleamathews.github.io/react-gravatar/examples/
 ## Usage
 See https://en.gravatar.com/site/implement/images/ for documentation on
 all the options.
+
+### Avoid exposing email
+If you wish to avoid sending an email address to the client, you can
+compute the md5 hash on the server and pass the hash to the component
+using the `md5` prop instead of the `email` prop.
 
 ### Defaults
 * 50x50 image
