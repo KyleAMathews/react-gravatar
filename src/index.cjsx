@@ -55,7 +55,7 @@ module.exports = React.createClass
 
     if window?
       # this is not NodeJS
-      modernBrowser = 'srcset' in document.createElement('img')
+      modernBrowser = 'srcset' of document.createElement('img')
 
     if not modernBrowser and isRetina()
       <img

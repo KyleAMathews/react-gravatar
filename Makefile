@@ -11,7 +11,7 @@ release-major:
 
 build:
 	@$(BIN)/cjsx -cb -o dist src/index.cjsx
-	@$(BIN)/browserify examples/index.js -o examples/bundle.js
+	@$(BIN)/browserify -t babelify examples/index.js -o examples/bundle.js
 
 publish:
 	git push --tags origin HEAD:master
