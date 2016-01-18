@@ -63,7 +63,9 @@ module.exports = React.createClass
         className={"react-gravatar " + @props.className}
         src={retinaSrc}
         height={@props.size}
-        width={@props.size} />
+        width={@props.size}
+        {...@props}
+      />
     else
       <img
         style={@props.style}
@@ -71,4 +73,6 @@ module.exports = React.createClass
         src={src}
         srcSet={retinaSrc + " 2x"}
         height={@props.size}
-        width={@props.size} />
+        width={@props.size}
+        {...@props}
+      />
