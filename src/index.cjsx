@@ -20,7 +20,6 @@ module.exports = React.createClass
     rating: 'g'
     https: false
     default: "retro"
-    className: ""
 
   render: ->
     base = if @props.https
