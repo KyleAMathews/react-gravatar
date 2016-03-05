@@ -7,12 +7,12 @@
     "url": "https://github.com/KyleAMathews/react-gravatar/issues"
   },
   "dependencies": {
-    "babelify": "^6.4.0",
     "is-retina": "^1.0.3",
     "md5": "^2.0.0",
     "react-dom": "^0.14.0"
   },
   "devDependencies": {
+    "babelify": "^6.4.0",
     "browserify": "^11.2.0",
     "coffee-react": "^4.0.0",
     "react": "^0.14.0"
