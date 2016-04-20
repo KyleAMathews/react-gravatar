@@ -56,22 +56,26 @@ module.exports = React.createClass
       # this is not NodeJS
       modernBrowser = 'srcset' of document.createElement('img')
 
+    className = 'react-gravatar'
+    if @props.className
+      className = "#{className} #{@props.className}"
+
     if not modernBrowser and isRetina()
       <img
         style={@props.style}
-        className={"react-gravatar " + @props.className}
         src={retinaSrc}
         height={@props.size}
         width={@props.size}
         {...@props}
+        className={className}
       />
     else
       <img
         style={@props.style}
-        className={"react-gravatar " + @props.className}
         src={src}
         srcSet={retinaSrc + " 2x"}
         height={@props.size}
         width={@props.size}
         {...@props}
+        className={className}
       />
