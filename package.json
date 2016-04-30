@@ -14,7 +14,7 @@
     "babelify": "^6.4.0",
     "browserify": "^11.2.0",
     "coffee-react": "^5.0.0",
-    "react": "^15.0.1",
+    "react": "^15.0.2",
     "react-dom": "^15.0.1"
   },
   "peerDependencies": {
