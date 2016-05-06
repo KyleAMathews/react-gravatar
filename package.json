@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "babelify": "^6.4.0",
-    "browserify": "^11.2.0",
+    "browserify": "^13.0.1",
     "coffee-react": "^5.0.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.1"
