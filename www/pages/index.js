@@ -36,9 +36,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="mathews.kyle@gmail.com" />'}
+          {'<Gravatar email="mathews.kyle@gmail.com" https />'}
         </code>
-        <Gravatar email="mathews.kyle@gmail.com" />
+        <Gravatar email="mathews.kyle@gmail.com" https />
 
         <code
           style={{
@@ -46,9 +46,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="mathews.kyle@gmail.com" size={150} />'}
+          {'<Gravatar email="mathews.kyle@gmail.com" size={150} https />'}
         </code>
-        <Gravatar email="mathews.kyle@gmail.com" size={150} />
+        <Gravatar email="mathews.kyle@gmail.com" size={150} https />
 
         <p>For emails without a gravatar, use the retro default. You can override this by passing in a different 'default' prop. See https://en.gravatar.com/site/implement/images/ for options.</p>
         <code
@@ -57,9 +57,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="blah@blah.com" />'}
+          {'<Gravatar email="blah@blah.com" https />'}
         </code>
-        <Gravatar email="blah@blah.com" />
+        <Gravatar email="blah@blah.com" https />
 
         <p>Override all defaults</p>
         <code
