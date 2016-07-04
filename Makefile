@@ -10,25 +10,13 @@ release-major:
 	@$(call release,major)
 
 build:
-	@$(BIN)/cjsx -cb -o dist src/index.cjsx
-	@$(BIN)/browserify -t babelify examples/index.js -o examples/bundle.js
+	@$(BIN)/babel src --out-dir dist/
 
 publish:
 	git push --tags origin HEAD:master
 	npm publish
 
-publish-gh-pages:
-	git checkout gh-pages
-	git merge master
-	@$(BIN)/cjsx -cb -o dist src/index.cjsx
-	@$(BIN)/browserify -t babelify examples/index.js -o examples/bundle.js
-	cp examples/* .
-	git add .
-	git commit -m "Update website"
-	git push
-	git checkout master
-
 define release
-	@$(BIN)/cjsx -cb -o dist src/index.cjsx
+	@$(BIN)/babel src --out-dir dist/
 	npm version $(1)
 endef
