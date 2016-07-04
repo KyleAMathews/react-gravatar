@@ -4,13 +4,22 @@ import querystring from 'query-string'
 import isRetina from 'is-retina'
 
 class Gravatar extends React.Component {
-  getDefaultProps() {
-    return {
-      size: 50,
-      rating: 'g',
-      https: false,
-      default: 'retro',
-    }
+  static displayName = 'Gravatar'
+  static propTypes = {
+    email: React.PropTypes.string,
+    md5: React.PropTypes.string,
+    size: React.PropTypes.number,
+    rating: React.PropTypes.string,
+    https: React.PropTypes.bool,
+    default: React.PropTypes.string,
+    className: React.PropTypes.string,
+    style: React.PropTypes.object,
+  }
+  static defaultProps = {
+    size: 50,
+    rating: 'g',
+    https: false,
+    default: 'retro',
   }
 
   render() {
@@ -60,6 +69,17 @@ class Gravatar extends React.Component {
       className = `${className} ${this.props.className}`
     }
 
+    // Clone this.props and then delete Component specific props so we can
+    // spread the rest into the img.
+    let { ...rest } = this.props
+    delete rest.https
+    delete rest.md5
+    delete rest.email
+    delete rest.rating
+    delete rest.size
+    delete rest.style
+    delete rest.className
+    delete rest.default
     if (!modernBrowser && isRetina()) {
       return (
         <img
@@ -68,7 +88,7 @@ class Gravatar extends React.Component {
           src={retinaSrc}
           height={this.props.size}
           width={this.props.size}
-          {...this.props}
+          {...rest}
           className={className}
         />
       )
@@ -81,24 +101,12 @@ class Gravatar extends React.Component {
         srcSet={`${retinaSrc} 2x`}
         height={this.props.size}
         width={this.props.size}
-        {...this.props}
+        {...rest}
         className={className}
       />
     )
   }
 }
 
-Gravatar.displayName = 'Gravatar'
-
-Gravatar.propTypes = {
-  email: React.PropTypes.string,
-  md5: React.PropTypes.string,
-  size: React.PropTypes.number,
-  rating: React.PropTypes.string,
-  https: React.PropTypes.bool,
-  default: React.PropTypes.string,
-  className: React.PropTypes.string,
-  style: React.PropTypes.object,
-}
 
 module.exports = Gravatar

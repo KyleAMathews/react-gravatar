@@ -68,9 +68,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="blahblah@blah.com" size="150" rating="pg" https default="monsterid" className="CustomAvatar-image" />'}
+          {'<Gravatar email="blahblah@blah.com" size={150} rating="pg" https default="monsterid" className="CustomAvatar-image" />'}
         </code>
-        <Gravatar email="blahblah@blah.com" size="150" rating="pg" https default="monsterid" className="CustomAvatar-image" />
+        <Gravatar email="blahblah@blah.com" size={150} rating="pg" https default="monsterid" className="CustomAvatar-image" />
 
         <h2>Props</h2>
         <ul>
