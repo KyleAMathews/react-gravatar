@@ -1,4 +1,4 @@
-# React Headroom website
+# React Gravatar website
 
 This site is built using [Gatsby](https://github.com/gatsbyjs/gatsby)
 
