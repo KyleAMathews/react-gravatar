@@ -10,6 +10,9 @@ module.exports = React.createClass({
       <div>
         <h1>React Gravatar</h1>
         <p>
+          <a href="https://github.com/KyleAMathews/react-gravatar">Code on Github</a>
+        </p>
+        <p>
           React component for rendering a gravatar profile image. Adjusts automatically for retina displays.
         </p>
         <h2>Install</h2>
@@ -43,9 +46,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="mathews.kyle@gmail.com" size={100} />'}
+          {'<Gravatar email="mathews.kyle@gmail.com" size={150} />'}
         </code>
-        <Gravatar email="mathews.kyle@gmail.com" size={100} />
+        <Gravatar email="mathews.kyle@gmail.com" size={150} />
 
         <p>For emails without a gravatar, use the retro default. You can override this by passing in a different 'default' prop. See https://en.gravatar.com/site/implement/images/ for options.</p>
         <code
@@ -57,6 +60,17 @@ module.exports = React.createClass({
           {'<Gravatar email="blah@blah.com" />'}
         </code>
         <Gravatar email="blah@blah.com" />
+
+        <p>Override all defaults</p>
+        <code
+          style={{
+            display: 'block',
+            marginBottom: rhythm(1/2),
+          }}
+        >
+          {'<Gravatar email="blahblah@blah.com" size="150" rating="pg" https default="monsterid" className="CustomAvatar-image" />'}
+        </code>
+        <Gravatar email="blahblah@blah.com" size="150" rating="pg" https default="monsterid" className="CustomAvatar-image" />
 
         <h2>Props</h2>
         <ul>
