@@ -31,7 +31,7 @@ using the `md5` prop instead of the `email` prop.
 ### Override all defaults
 `<Gravatar
 	email="mathews.kyle@gmail.com"
-	size=100
+	size={100}
 	rating="pg"
 	https
 	default="monsterid"
