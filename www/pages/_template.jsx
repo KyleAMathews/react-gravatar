@@ -2,7 +2,6 @@ import React from 'react'
 import { Container } from 'react-responsive-grid'
 
 import { rhythm } from 'utils/typography'
-import 'css/code.css'
 
 module.exports = React.createClass({
   propTypes () {

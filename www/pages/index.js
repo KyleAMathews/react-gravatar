@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { rhythm } from 'utils/typography'
-import 'css/code.css'
 import Gravatar from '../../src/'
 
 module.exports = React.createClass({
