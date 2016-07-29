@@ -34,7 +34,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "peerDependencies": {
-    "react": "*"
+    "react": "15.3.0"
   },
   "repository": {
     "type": "git",
