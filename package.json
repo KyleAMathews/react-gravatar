@@ -9,7 +9,7 @@
   "dependencies": {
     "is-retina": "^1.0.3",
     "md5": "^2.1.0",
-    "query-string": "^4.2.2"
+    "query-string": "^4.2.3"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
