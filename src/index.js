@@ -18,17 +18,11 @@ class Gravatar extends React.Component {
   static defaultProps = {
     size: 50,
     rating: 'g',
-    https: false,
     default: 'retro',
   }
 
   render() {
-    let base
-    if (this.props.https) {
-      base = 'https://secure.gravatar.com/avatar/'
-    } else {
-      base = 'http://www.gravatar.com/avatar/'
-    }
+    const base = '//www.gravatar.com/avatar/'
 
     const query = querystring.stringify({
       s: this.props.size,
