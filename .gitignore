@@ -26,3 +26,4 @@ node_modules
 dist/
 examples/bundle.js
 public/
+.gatsby-context.js

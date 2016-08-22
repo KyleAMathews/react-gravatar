@@ -4,23 +4,25 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^0.11.6",
+    "gatsby": "^0.12.1",
     "history": "^2.0.2",
     "react-document-title": "^2.0.2",
     "react-responsive-grid": "^0.3.3",
-    "react-router": "^2.5.2",
-    "typography": "^0.11.6",
+    "react-router": "^2.6.0",
+    "typography": "^0.11.7",
     "typography-plugin-code": "^0.11.5",
     "typography-react": "^0.10.4",
-    "typography-theme-noriega": "^0.10.8"
+    "typography-theme-lawton": "^0.11.7",
+    "typography-theme-noriega": "^0.11.8"
   },
   "devDependencies": {
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.10.1",
+    "eslint-plugin-import": "^1.11.1",
     "eslint-plugin-jsx-a11y": "^1.5.3",
     "eslint-plugin-react": "^5.2.2",
-    "gh-pages": "^0.11.0"
+    "gh-pages": "^0.11.0",
+    "typography-design-tools": "^0.11.10"
   },
   "keywords": [
     "gatsby"
