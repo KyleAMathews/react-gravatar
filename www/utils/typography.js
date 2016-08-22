@@ -7,8 +7,8 @@ const typography = new Typography(theme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
-  const designTools = require('typography-design-tools')
-  designTools(typography)
+  //const designTools = require('typography-design-tools')
+  //designTools(typography)
   typography.injectStyles()
 }
 
