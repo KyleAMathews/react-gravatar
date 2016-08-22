@@ -35,9 +35,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="mathews.kyle@gmail.com" https />'}
+          {'<Gravatar email="mathews.kyle@gmail.com" />'}
         </code>
-        <Gravatar email="mathews.kyle@gmail.com" https />
+        <Gravatar email="mathews.kyle@gmail.com" />
 
         <code
           style={{
@@ -45,9 +45,9 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="mathews.kyle@gmail.com" size={150} https />'}
+          {'<Gravatar email="mathews.kyle@gmail.com" size={150} />'}
         </code>
-        <Gravatar email="mathews.kyle@gmail.com" size={150} https />
+        <Gravatar email="mathews.kyle@gmail.com" size={150} />
 
         <p>For emails without a gravatar, use the retro default. You can override this by passing in a different 'default' prop. See https://en.gravatar.com/site/implement/images/ for options.</p>
         <code
@@ -56,20 +56,20 @@ module.exports = React.createClass({
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="blah@blah.com" https />'}
+          {'<Gravatar email="blah@blah.com" />'}
         </code>
-        <Gravatar email="blah@blah.com" https />
+        <Gravatar email="blah@blah.com" />
 
-        <p>Override all defaults</p>
+        <h4>Override all defaults</h4>
         <code
           style={{
             display: 'block',
             marginBottom: rhythm(1/2),
           }}
         >
-          {'<Gravatar email="blahblah@blah.com" size={150} rating="pg" https default="monsterid" className="CustomAvatar-image" />'}
+          {'<Gravatar email="blahblah@blah.com" size={150} rating="pg" default="monsterid" className="CustomAvatar-image" />'}
         </code>
-        <Gravatar email="blahblah@blah.com" size={150} rating="pg" https default="monsterid" className="CustomAvatar-image" />
+        <Gravatar email="blahblah@blah.com" size={150} rating="pg" default="monsterid" className="CustomAvatar-image" />
 
         <h2>Props</h2>
         <ul>
@@ -77,7 +77,6 @@ module.exports = React.createClass({
           <li><code>md5: React.PropTypes.string</code> — Optionally just pass in a precomputed md5 hash instead of an email.</li>
           <li><code>size: React.PropTypes.number</code> — Size in pixels of image to generate. Images are always square. Defaults to 50</li>
           <li><code>rating: React.PropTypes.string</code> — rating to use. Defaults to 'g'</li>
-          <li><code>https: React.PropTypes.bool</code> — Use https for image. Defaults to false.</li>
           <li><code>default: React.PropTypes.string</code> — Pick the type of fallback image to use. Defaults to 'retro'</li>
           <li><code>className: React.PropTypes.string</code> — Add a className to the generated image.</li>
           <li><code>style: React.PropTypes.object</code> — Set styles on the image.</li>

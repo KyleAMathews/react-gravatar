@@ -33,7 +33,6 @@ using the `md5` prop instead of the `email` prop.
 	email="mathews.kyle@gmail.com"
 	size={100}
 	rating="pg"
-	https
 	default="monsterid"
 	className="CustomAvatar-image"
 />`
