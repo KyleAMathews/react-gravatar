@@ -4,10 +4,25 @@ import { prefixLink } from 'gatsby-helpers'
 import { GoogleFont, TypographyStyle } from 'typography-react'
 import typography from './utils/typography'
 
-const BUILD_TIME = new Date().getTime()
+let stats
+try {
+  stats = require('./public/stats.json')
+} catch (e) {
+  // ignore
+}
 
 module.exports = React.createClass({
   render () {
+    let scripts = []
+    console.log(this.props)
+    if (process.env.NODE_ENV === 'production') {
+      scripts.push(<script src={prefixLink(`/${stats.assetsByChunkName.commons[0]}`)} />)
+      scripts.push(<script src={prefixLink(`/${stats.assetsByChunkName.routes[0]}`)} />)
+      scripts.push(<script src={prefixLink(`/${stats.assetsByChunkName[`route-component---${this.props.componentName}`][0]}`)} />)
+      scripts.push(<script src={prefixLink(`/${stats.assetsByChunkName[this.props.pathJSFile][0]}`)} />)
+    } else {
+      scripts.push(<script src="/commons.js" />)
+    }
     return (
       <html lang="en">
         <head>
@@ -23,7 +38,7 @@ module.exports = React.createClass({
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
-          <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+          {scripts}
         </body>
       </html>
     )

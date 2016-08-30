@@ -27,3 +27,4 @@ dist/
 examples/bundle.js
 public/
 .gatsby-context.js
+.gatsby-intermediate-build/
