@@ -1,8 +1,24 @@
 {
   "assetsByChunkName": {
-    "main": [
-      "bundle.js",
-      "bundle.js.map"
+    "route-component---index": [
+      "0.route-component---index-296311ab.js",
+      "0.route-component---index-296311ab.js.map"
+    ],
+    "commons": [
+      "commons-2677f218.js",
+      "commons-2677f218.js.map"
+    ],
+    "path---index": [
+      "2.path---index-e7ce1682.js",
+      "2.path---index-e7ce1682.js.map"
+    ],
+    "index": [
+      "index-e6e3bb55.js",
+      "index-e6e3bb55.js.map"
+    ],
+    "routes": [
+      "routes-8b8d4eca.js",
+      "routes-8b8d4eca.js.map"
     ]
   }
 }
