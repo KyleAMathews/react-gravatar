@@ -1,24 +1,20 @@
 {
   "assetsByChunkName": {
-    "route-component---index": [
-      "0.route-component---index-296311ab.js",
-      "0.route-component---index-296311ab.js.map"
+    "page-template---index": [
+      "0.page-template---index-52b428fe.js",
+      "0.page-template---index-52b428fe.js.map"
     ],
     "commons": [
       "commons-2677f218.js",
       "commons-2677f218.js.map"
     ],
+    "app": [
+      "app-3ab4e699.js",
+      "app-3ab4e699.js.map"
+    ],
     "path---index": [
-      "2.path---index-e7ce1682.js",
-      "2.path---index-e7ce1682.js.map"
-    ],
-    "index": [
-      "index-e6e3bb55.js",
-      "index-e6e3bb55.js.map"
-    ],
-    "routes": [
-      "routes-8b8d4eca.js",
-      "routes-8b8d4eca.js.map"
+      "3.path---index-b52eb9c0.js",
+      "3.path---index-b52eb9c0.js.map"
     ]
   }
 }

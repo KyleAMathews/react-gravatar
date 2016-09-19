@@ -1,2 +1,0 @@
-webpackJsonp([2],{332:function(a,t){a.exports={data:{config:{siteMetadata:{title:"React Gravatar"}}},pathContext:{component:"/Users/kylemathews/programs/react-gravatar/www/pages/index.js",path:"/"}}}});
-//# sourceMappingURL=2.path---index-e7ce1682.js.map
