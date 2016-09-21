@@ -98,9 +98,9 @@ const IndexRoute = React.createClass({
 
 export default IndexRoute
 
-export const routeQuery = `
+export const pageQuery = `
 {
-  config {
+  site {
     siteMetadata {
       title
     }
