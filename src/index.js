@@ -10,7 +10,6 @@ class Gravatar extends React.Component {
     md5: React.PropTypes.string,
     size: React.PropTypes.number,
     rating: React.PropTypes.string,
-    https: React.PropTypes.bool,
     default: React.PropTypes.string,
     className: React.PropTypes.string,
     style: React.PropTypes.object,
@@ -69,7 +68,6 @@ class Gravatar extends React.Component {
     // Clone this.props and then delete Component specific props so we can
     // spread the rest into the img.
     let { ...rest } = this.props
-    delete rest.https
     delete rest.md5
     delete rest.email
     delete rest.rating
