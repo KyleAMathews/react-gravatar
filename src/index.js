@@ -72,6 +72,7 @@ class Gravatar extends React.Component {
     let { ...rest } = this.props
     delete rest.md5
     delete rest.email
+    delete rest.protocol
     delete rest.rating
     delete rest.size
     delete rest.style
