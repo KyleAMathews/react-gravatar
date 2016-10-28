@@ -89,6 +89,7 @@ const IndexRoute = React.createClass({
             <li><code>default: React.PropTypes.string</code> — Pick the type of fallback image to use. Defaults to 'retro'</li>
             <li><code>className: React.PropTypes.string</code> — Add a className to the generated image.</li>
             <li><code>style: React.PropTypes.object</code> — Set styles on the image.</li>
+            <li><code>protocol: React.PropTypes.string</code> — Use different protocol (http://, https://, etc.) Defaults to '//'</li>
           </ul>
         </div>
       </Container>
