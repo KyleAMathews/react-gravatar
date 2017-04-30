@@ -2,18 +2,19 @@ import React from 'react'
 import md5 from 'md5'
 import querystring from 'query-string'
 import isRetina from 'is-retina'
+import PropTypes from 'prop-types'
 
 class Gravatar extends React.Component {
   static displayName = 'Gravatar'
   static propTypes = {
-    email: React.PropTypes.string,
-    md5: React.PropTypes.string,
-    size: React.PropTypes.number,
-    rating: React.PropTypes.string,
-    default: React.PropTypes.string,
-    className: React.PropTypes.string,
-    protocol: React.PropTypes.string,
-    style: React.PropTypes.object,
+    email: PropTypes.string,
+    md5: PropTypes.string,
+    size: PropTypes.number,
+    rating: PropTypes.string,
+    default: PropTypes.string,
+    className: PropTypes.string,
+    protocol: PropTypes.string,
+    style: PropTypes.object,
   }
   static defaultProps = {
     size: 50,
