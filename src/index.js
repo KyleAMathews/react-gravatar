@@ -45,7 +45,7 @@ class Gravatar extends React.Component {
     if (this.props.md5) {
       hash = this.props.md5
     } else if (typeof this.props.email === 'string') {
-      hash = md5(formattedEmail)
+      hash = md5(formattedEmail, {encoding: "binary"})
     } else {
       console.warn(
         'Gravatar image can not be fetched. Either the "email" or "md5" prop must be specified.'
