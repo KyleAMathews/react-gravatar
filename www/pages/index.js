@@ -58,7 +58,7 @@ const IndexRoute = React.createClass({
           </code>
           <Gravatar email="mathews.kyle@gmail.com" size={150} />
 
-          <p>For emails without a gravatar, use the retro default. You can override this by passing in a different 'default' prop. See https://en.gravatar.com/site/implement/images/ for options.</p>
+          <p>For emails without a gravatar, use the retro default. You can override this by passing in a different 'default' prop. See Gravatar's <a href="https://en.gravatar.com/site/implement/images/">Image Requests documentation</a> for options.</p>
           <code
             style={{
               display: 'block',
