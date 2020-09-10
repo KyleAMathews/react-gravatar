@@ -14,6 +14,7 @@ class Gravatar extends React.Component {
     default: PropTypes.string,
     className: PropTypes.string,
     protocol: PropTypes.string,
+    domain: PropTypes.string,
     style: PropTypes.object,
   }
   static defaultProps = {
@@ -21,10 +22,11 @@ class Gravatar extends React.Component {
     rating: 'g',
     default: 'retro',
     protocol: '//',
+    domain: 'www.gravatar.com',
   }
 
   render() {
-    const base = `${this.props.protocol}www.gravatar.com/avatar/`
+    const base = `${this.props.protocol}${this.props.domain}/avatar/`
 
     const query = querystring.stringify({
       s: this.props.size,
