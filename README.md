@@ -26,13 +26,19 @@ using the `md5` prop instead of the `email` prop.
 * `react-gravatar` css class
 
 ### Use defaults
-`<Gravatar email="mathews.kyle@gmail.com" />`
+```jsx
+<Gravatar email="mathews.kyle@gmail.com" />
+```
 
 ### Override all defaults
-`<Gravatar
+```jsx
+<Gravatar
 	email="mathews.kyle@gmail.com"
 	size={100}
 	rating="pg"
 	default="monsterid"
 	className="CustomAvatar-image"
-/>`
+	style={{margin: '10px'}}
+	protocol="https://"
+/>
+```
