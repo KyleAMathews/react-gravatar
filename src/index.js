@@ -84,7 +84,7 @@ class Gravatar extends React.Component {
     if (!modernBrowser && isRetina()) {
       return (
         <img
-          alt={`Gravatar for ${formattedEmail}`}
+          alt={this.props.email ? `Gravatar for ${formattedEmail}` : `Gravatar`}
           style={this.props.style}
           src={retinaSrc}
           height={this.props.size}
