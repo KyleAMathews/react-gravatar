@@ -9,6 +9,7 @@
   "dependencies": {
     "is-retina": "^1.0.3",
     "md5": "^2.1.0",
+    "prop-types": "^15.5.10",
     "query-string": "^4.2.2"
   },
   "devDependencies": {
